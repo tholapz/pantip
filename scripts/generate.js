@@ -1,6 +1,6 @@
 const fs = require('fs');
 const uuid = require('./uuid');
-const { sample } = require('lodash');
+const { sample, sampleSize } = require('lodash');
 
 const path = '../src/data.json';
 
@@ -133,5 +133,5 @@ linkComments(comments, topics);
 
 fs.writeFile(path, JSON.stringify({ comments, topics, highlights }), err => {
     if (err) throw err;
-    console.log(`saved at ${SCHEMA_PATH}`);
+    console.log(`saved at ${path}`);
 });
