@@ -8,9 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          
-        </header>
+        <header className="App-header"/>
         <BreadCrumb top="บางขุนพรหม" />
         <div className="App-container container">
           <Highlight/>

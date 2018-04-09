@@ -1,0 +1,15 @@
+.highlight {
+    padding: 12px;
+    border: solid 1px #8E8BA7;
+    border-radius: 10px;
+}
+.highlight-item {
+    text-align: left;
+    color: #FFCD05;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.highlight-item:hover {
+    text-decoration: underline;
+}

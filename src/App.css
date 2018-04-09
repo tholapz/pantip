@@ -25,3 +25,6 @@ body {
   font-size: large;
 }
 
+.App-container {
+  padding-top: 30px;
+}
