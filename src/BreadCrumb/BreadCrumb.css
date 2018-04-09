@@ -1,0 +1,10 @@
+.bread-crumb-container {
+    background: #38355C;
+    color: #e9e5f6;
+    text-align: left;
+    padding: 8px 5px 5px 30px;
+}
+
+.bread-crumb {
+    margin-left: 12px;
+}

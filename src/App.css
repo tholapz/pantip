@@ -1,16 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, Sans-serif, Geneva, Tahoma;
+  background: #3C3963;
+  color: #e9e5f6;
+  min-width: 1045px;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  background: url('//ptcdn.info/doodle/2017/30oct2017-bg.png') repeat top center;
+  height: 221px;
+
   color: white;
 }
 
@@ -22,7 +25,3 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}

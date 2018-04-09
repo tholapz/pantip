@@ -6,14 +6,17 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+import BreadCrumb from '../BreadCrumb';
 
-storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </Button>
-  ));
+storiesOf('BreadCrumb', module).add('with room name', () => <BreadCrumb top="บางขุนพรหม"/>);
+// storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+
+// storiesOf('Button', module)
+//   .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
+//   .add('with some emoji', () => (
+//     <Button onClick={action('clicked')}>
+//       <span role="img" aria-label="so cool">
+//         😀 😎 👍 💯
+//       </span>
+//     </Button>
+//   ));
