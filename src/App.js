@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import Highlight from './Highlight';
 import BreadCrumb from './BreadCrumb';
+import Highlight from './Highlight';
+import Topics from './Topics';
 class App extends Component {
   render() {
     return (
@@ -10,9 +11,10 @@ class App extends Component {
         <header className="App-header">
           
         </header>
+        <BreadCrumb top="บางขุนพรหม" />
         <div className="App-container container">
-          <BreadCrumb top="บางขุนพรหม"/>
           <Highlight/>
+          <Topics/>
         </div>
       </div>
     );

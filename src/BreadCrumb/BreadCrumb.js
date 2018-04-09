@@ -15,8 +15,10 @@ export default class BreadCrumb extends Component {
     render() {
         return (
             <div className="bread-crumb-container">
-                <a href="/"><span className="glyphicon glyphicon-home" aria-hidden="true"/></a>
-                <span className="bread-crumb">{this.props.top}</span>
+                <div className="container">
+                    <a href="/"><span className="glyphicon glyphicon-home" aria-hidden="true"/></a>
+                    <span className="bread-crumb">{this.props.top}</span>
+                </div>
             </div>
         );
     }
