@@ -5,6 +5,7 @@
     padding: 8px 5px 5px 30px;
 }
 
-.bread-crumb {
-    margin-left: 12px;
+.bread-crumb a, a:hover {
+    text-decoration: none;
+    color: #e9e5f6;
 }
