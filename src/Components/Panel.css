@@ -1,8 +1,16 @@
 .component-wrapper {
-    border: solid 1px #8E8BA7;
-    border-radius: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+    background: #193366;
+    position: relative;
+    border-radius: 2px;
 }
 
 .component-inner {
-    padding: 12px;
+    border: solid 1px #8E8BA7;
+    box-shadow: 1px 2px 8px #221F40;
+    border-radius: 2px;
+    padding: 20px;
 }

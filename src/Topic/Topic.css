@@ -1,0 +1,15 @@
+.topic-detail-title {
+    font-size: 1.714em;
+    font-weight: normal;
+    color: #FFCD05;
+    line-height: 120%;
+    padding: 27px 0px 9px 0px;
+    word-wrap: break-word;
+    margin-top: 0;
+}
+
+.topic-detail-text {
+    font-size: 1.143em;
+    line-height: 1.563em;
+    color: #cccccc;
+}
