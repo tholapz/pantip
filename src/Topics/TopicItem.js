@@ -9,14 +9,14 @@ export default class TopicItem extends Component {
         const topic = topics.find(t => t.id === this.props.id);
 
         return (
-            <Link to={`/topic/${topic.id}`}>
-                <li className="topic-item">
+            <li className="topic-item">
+                <Link to={`/topic/${topic.id}`}>
                     <span className="topic-title">{topic.title}</span>
-                    <div className="topic-detail">
-                        <div className="topic-author">สมาชิกหมายเลข {topic.author}</div>
-                    </div>
-                </li>
-            </Link>
+                </Link>
+                <div className="topic-detail">
+                    <div className="topic-author">สมาชิกหมายเลข {topic.author}</div>
+                </div>
+            </li>
         );
     }
 }
