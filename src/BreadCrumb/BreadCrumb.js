@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 import "./BreadCrumb.css";
 
@@ -16,7 +17,7 @@ export default class BreadCrumb extends Component {
         return (
             <div className="bread-crumb-container">
                 <div className="container">
-                    <span className="glyphicon glyphicon-home" aria-hidden="true"/>
+                    <Link to="/"><span className="glyphicon glyphicon-home" aria-hidden="true"/></Link>
                     <span className="bread-crumb">{this.props.top}</span>
                 </div>
             </div>
