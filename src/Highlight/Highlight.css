@@ -1,8 +1,8 @@
-.highlight-item {
+.highlight-item a {
     color: #FFCD05;
     cursor: pointer;
 }
 
-.highlight-item:hover {
+.highlight-item a:hover {
     text-decoration: underline;
 }

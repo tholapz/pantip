@@ -86,7 +86,8 @@ function makeComments(counts) {
         const comment = {
             id: uuid(),
             text: sample(texts),
-            author: sample(authors)
+            author: sample(authors),
+            comments: []
         }
         comments.push(comment);
     }
@@ -108,9 +109,9 @@ function makeTopics(counts) {
     return topics;
 }
 
-function linkComments(comments, topics) {
+function linkComments(comments, parents) {
     comments.forEach(comment => {
-        sample(topics).comments.push(comment.id);
+        sample(parents).comments.push(comment.id);
     });
 }
 
@@ -118,7 +119,7 @@ function linkComments(comments, topics) {
 const comments = makeComments(100);
 const topics = makeTopics(15);
 const highlights = sampleSize(topics, 6).map(t => t.id);
-linkComments(comments, topics);
+linkComments(comments, [].concat(topics, sampleSize(comments, 20)));
 
 fs.writeFile(path, JSON.stringify({ comments, topics, highlights }), err => {
     if (err) throw err;

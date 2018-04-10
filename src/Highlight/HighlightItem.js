@@ -8,11 +8,11 @@ export default class HighlightItem extends Component {
     render() {
         const topic = topics.find(t => t.id === this.props.id);
         return (
-            <Link to={`/topic/${topic.id}`}>
-                <li className="highlight-item">
-                    <div>{topic.title}</div>
-                </li>
-            </Link>
+            <li className="highlight-item">
+                <Link to={`/topic/${topic.id}`}>
+                    <span>{topic.title}</span>
+                </Link>
+            </li>
         );
     }
 }
