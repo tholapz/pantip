@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { highlights } from "../data.json";
 import HighlightItem from "./HighlightItem";
+import { Panel, ListContainer } from "../Components";
 import './Highlight.css';
 
 export default class Highlight extends Component {
@@ -14,9 +15,11 @@ export default class Highlight extends Component {
 
     render() {
         return (
-            <ul className="highlight">
-                { this.state.highlights.map(h => <HighlightItem id={h.id}/>) }
-            </ul>
+            <Panel>
+                <ListContainer>
+                    { this.state.highlights.map(id => <HighlightItem id={id}/>) }
+                </ListContainer>
+            </Panel>
         );
     }
 }

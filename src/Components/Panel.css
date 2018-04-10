@@ -1,0 +1,8 @@
+.component-wrapper {
+    border: solid 1px #8E8BA7;
+    border-radius: 10px;
+}
+
+.component-inner {
+    padding: 12px;
+}

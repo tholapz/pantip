@@ -1,0 +1,21 @@
+.topic-item {
+    padding: 8px 10px 8px 27px;
+    font-size: 1.143em;
+    color: #eeeeee;
+    background: #2D2A49;
+    border-bottom: 1px solid #312e4f;
+}
+.topic-item:hover .topic-detail {
+    color: #95d5cd;
+}
+.topic-title {
+    cursor: pointer;
+}
+
+.topic-title:hover {
+    text-decoration: underline;
+}
+
+.topic-detail {
+    color: #a6a3c7;
+}
